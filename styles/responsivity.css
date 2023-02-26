@@ -1,0 +1,378 @@
+/* MIXINS */
+/* VARIABLES */
+@media only screen and (max-width: 1400px) {
+  .navigationContainer {
+    display: none; }
+  .dropdown {
+    position: relative;
+    display: inline-block; }
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px; }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    height: 140px; }
+  .cooperationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .statisticElementContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 0; }
+  .statisticElement {
+    border: none;
+    padding: 0; }
+  .statisticContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .brandBtn {
+    margin-bottom: 10px; }
+  .header li:last-child {
+    display: none; }
+  .brandTitle {
+    width: 100% !important; } }
+
+@media only screen and (max-width: 1000px) {
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+  .footerCompanyContacts, .footerNavigation, .footerSocialLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0; }
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center; }
+  .copyrightContent {
+    gap: 1rem; }
+  .slideshow-container {
+    width: 100%;
+    max-height: 70vh; } }
+
+@media only screen and (max-width: 1521px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 1rem; }
+  /*.nextArrow {
+        display: none;
+    }
+
+    .prevArrow {
+        display: none;
+    }*/ }
+
+@media only screen and (max-width: 1280px) {
+  .cooperationContainer {
+    padding: 15px; }
+  .copyrightContent {
+    gap: 3rem; } }
+
+@media only screen and (max-width: 1150px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .aboutDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    text-align: center; }
+  .aboutImg {
+    width: 100%; }
+  .aboutBtn {
+    left: 50; }
+  .companyName {
+    position: relative;
+    padding-bottom: 15px;
+    color: #303030; }
+  .companyName::before {
+    content: '';
+    position: absolute;
+    background-color: #BF0F0F;
+    width: 137px;
+    height: 6px;
+    bottom: 0;
+    left: 35px; }
+  .profession {
+    position: relative;
+    padding-bottom: 30px;
+    color: #303030; }
+  .profession::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.4);
+    width: 450px;
+    height: 3px;
+    bottom: 0;
+    left: 50px; } }
+
+@media only screen and (max-width: 1100px) {
+  .brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 1em; } }
+
+@media only screen and (max-width: 912px) {
+  .copyrightContent {
+    gap: 1rem; } }
+
+@media only screen and (max-width: 820px) {
+  .copyrightContent {
+    gap: 0.5rem;
+    text-align: center; }
+  .headerContainer ul, li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 0; } }
+
+@media only screen and (max-width: 800px) {
+  .brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    flex-wrap: wrap;
+    gap: 1em; }
+  .distributionImage span {
+    position: relative;
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    text-align: center; } }
+
+@media only screen and (max-width: 800px) {
+  .cooperationTitle {
+    margin-left: 20px; }
+  .profession::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.4);
+    width: 270px;
+    height: 3px;
+    bottom: 0;
+    left: 0; }
+  .brandTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    text-align: center;
+    padding-bottom: 30px; }
+  .brandTitle::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.4);
+    width: 270px;
+    height: 3px;
+    bottom: 0;
+    left: 50; }
+  .productsTitle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .productsTitle::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.4);
+    width: 270px;
+    height: 3px;
+    bottom: 0;
+    left: 50; }
+  .productsDescription {
+    text-align: center;
+    width: 300px; }
+  .products {
+    padding-bottom: 30px; }
+  .copyrightContent {
+    gap: 0.5rem;
+    text-align: center; }
+  .headerContainer ul, li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 0; } }
+
+@media only screen and (max-width: 460px) {
+  .copyrightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px; } }
+
+@media only screen and (max-width: 412px) {
+  .copyrightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px; } }
+
+@media only screen and (max-width: 390px) {
+  .cooperationCard img {
+    width: 390px; }
+  #myBtn {
+    right: 10px; } }
+
+@media only screen and (max-width: 375px) {
+  #myBtn {
+    right: 10px; }
+  .cooperationTitle {
+    left: 20px; }
+  .popup {
+    width: 200px; }
+  .copyrightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px; }
+  .cooperationCard img {
+    width: 375px; } }
+
+@media only screen and (max-width: 360px) {
+  .cooperationCard img {
+    width: 360px; } }
+
+@media only screen and (max-width: 320px) {
+  #myBtn {
+    right: 10px; }
+  .cooperationTitle {
+    left: 0;
+    padding: 0; }
+  .copyrightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px; }
+  .brandTitle {
+    width: 70%; }
+  .dropdown-content {
+    position: absolute;
+    right: 0;
+    background-color: black;
+    opacity: 0.9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0px 15px;
+    border-radius: 10px; }
+  .popup {
+    width: 180px; }
+  .cooperationCard img {
+    width: 320px; }
+  .profession::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.4);
+    width: 200px;
+    height: 3px;
+    bottom: 0;
+    left: 10px; } }
+
+@media only screen and (max-width: 280px) {
+  .cooperationCard img {
+    width: 280px; }
+  #myBtn {
+    right: 10px; }
+  .productsDescription {
+    width: 90%;
+    margin-bottom: 5px; }
+  .productsTitle::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.4);
+    width: 200px;
+    height: 3px;
+    bottom: 0;
+    left: 50; }
+  .brandTitle::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.4);
+    width: 200px;
+    height: 3px;
+    bottom: 0;
+    left: 50; }
+  .popup {
+    width: 140px; } }
+
+@media only screen and (min-width: 1100px) {
+  #slider-container #slider .slide {
+    width: calc(2.5% - 20px); } }
+
+@media only screen and (max-width: 1100px) {
+  #slider-container #slider .slide {
+    width: calc(3.3333333% - 20px); } }
+
+@media only screen and (max-width: 900px) {
+  #slider-container #slider .slide {
+    width: calc(5% - 20px); } }
+
+@media only screen and (max-width: 550px) {
+  #slider-container #slider .slide {
+    width: calc(10% - 20px); } }

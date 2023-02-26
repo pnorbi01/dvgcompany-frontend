@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SP Frontend Norbert</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsivity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <div class="headerContainer">
+        <div class="header">
+            <div>
+                <img src="assets/images/logo.png" width="218" height="44" alt="logo">
+            </div>
+            <ul>
+                <li><a>Srpski</a></li>
+                <li><a>English</a></li>
+                <li><a>Magyar</a></li>
+                <li><button onclick="toggleDarkmode()" class="darkmodeBtn" id="darkmodeBtn" value="DARK MODE">DARK MODE</button></li>
+            </ul>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">O NAMA</a>
+                    <a href="#">DVG PROIZVODI</a>
+                    <a href="#">BRENDOVI</a>
+                    <a href="#">DISTRIBUCIJA</a>
+                    <a href="#">SARADNJA</a>
+                    <a href="#">NOVOSTI</a>
+                    <a href="#">KONTAKT</a>
+                    <div class="toggle">
+                        <button onclick="toggleDarkmode()" class="darkmodeBtn" id="darkmodeBtn" value="DARK MODE">DARK MODE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigationContainer">
+        <div class="navigationElements">
+            <div class="navigationElement">
+                <a href="#">
+                    <span>O NAMA</span>
+                </a>
+                <span class="navigationElementDescription">vizija za uspeh</span>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>DVG PROIZVODI</span>
+                </a>
+                <span class="navigationElementDescription">naši proizvodi</span>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>BRENDOVI</span>
+                </a>
+                <span class="navigationElementDescription">koje zasupamo</span>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>DISTRIBUCIJA</span>
+                </a>
+                <span class="navigationElementDescription">logistika i operativa</span>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>SARADNJA</span>
+                </a>
+                <span class="navigationElementDescription">poširenje ponude</span>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>NOVOSTI</span>
+                </a>
+                <span class="navigationElementDescription">aktuelnosti</span>
+
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>KONTAKT</span>
+                </a>
+                <span class="navigationElementDescription">kontaktirajte nas</span>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container" data-aos="zoom-in">
+        <div class="mySlides fade">
+            <img src="assets/images/slideshowImg1.jpg" style="width:100%; height:90vh">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/images/slideshowImg.jpeg" style="width:100%; height:90vh">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/images/slideshowImg2.jpg" style="width:100%;  height:90vh">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="aboutContainer">
+        <div class="aboutImg" data-aos="fade-up">
+            <img src="assets/images/dvgCompanyImg.png" width="100%" height="504" alt="dvgCompanyImage">
+        </div>
+        <div class="aboutDescription">
+            <h1 class="companyName" data-aos="fade-up">DVG Company</h1>
+            <h2 class="profession" data-aos="fade-up">Veleprodaja i maloprodaja kozmetike i kucne hemije</h3>
+                <h5 class="description" data-aos="fade-up">DVG Company d.o.o. je trgovinsko preduzeće osnovano 2008. godine u Sobitici.
+                    Prevenstvena delatnost kompanije je veleprodaja kozmetike i kućne hemije. U potpunosti je u
+                    privatnom vlasništvu, sa sedištem u Subotici. Tu se nalazi distrubutivni centar i poslovne
+                    prostorije, sa ukupno 3000m2 magacinskog prostora koji zadovoljava sve segmente u pogledu smeštaja,
+                    čuvanja i plasiranja robe.</h5>
+                <button class="aboutBtn" data-aos="fade-up">Saznajte vise o nama</button>
+        </div>
+    </div>
+    <div class="distributionContainer">
+        <div class="distributionImage">
+            <span data-aos="fade-down">POUZDANA DISTRIBUCIJA</span>
+        </div>
+    </div>
+    <div class="cooperationContainer">
+        <div class="cooperationCard" data-aos="fade-up">
+            <img src="assets/images/partners.png" height="278" alt="dvgCompanyImage">
+            <span class="cooperationTitle">POSTANITE NAŠ PARTNER</span>
+        </div>
+        <div class="cooperationCard" data-aos="fade-up">
+            <img src="assets/images/products.png" height="278" alt="dvgCompanyImage">
+            <span class="cooperationTitle">NAŠI PROIZVODI</span>
+        </div>
+        <div class="cooperationCard" data-aos="fade-up">
+            <img src="assets/images/delivery.png" height="278" alt="dvgCompanyImage">
+            <span class="cooperationTitle">UVOZ IZ MAĐARSKE</span>
+        </div>
+    </div>
+    <div class="statisticContainer">
+        <div class="statisticDescription">
+            <h1>DVG Company</h1>
+            <span>u brojkama</span>
+        </div>
+    </div>
+    <div class="statisticBackground">
+        <div class="statisticElementContent">
+            <div class="statisticElement">
+                <span class="statisticNumber" data-aos="fade-up">3000 <span class="measure">m<sup>2</sup></span></span>
+                <span class="statisticTitle" data-aos="fade-up">Magacinskog prostora</span>
+            </div>
+            <div class="statisticElement">
+                <span class="statisticNumber" data-aos="fade-up">20</span>
+                <span class="statisticTitle" data-aos="fade-up">Vozila</span>
+            </div>
+            <div class="statisticElement">
+                <span class="statisticNumber" data-aos="fade-up">8</span>
+                <span class="statisticTitle" data-aos="fade-up">Komercijalista</span>
+            </div>
+            <div class="statisticElement">
+                <span class="statisticNumber" data-aos="fade-up">170</span>
+                <span class="statisticTitle" data-aos="fade-up">Brendova</span>
+            </div>
+        </div>
+    </div>
+    <div class="productsContainer">
+        <div class="productsTitle" data-aos="fade-up">
+            <h1>Naši proizvodi</h1>
+        </div>
+        <div class="productsDescription" data-aos="fade-up">
+            <span>Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica i tela.
+                Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i naši kupci.</span>
+        </div>
+        <div id="container">
+            <div id="slider-container">
+                <span onclick="slideRight()" class="btn"></span>
+                <div id="slider">
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/foil.png" alt="card1">
+                            <span class="cardDesc">KESE I FOLIJE</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/forKitchen.png" alt="card2">
+                            <span class="cardDesc">ZA KUHINJU</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/wcPaper.png" alt="card3">
+                            <span class="cardDesc">UBRUSI I TOALET PAPIRI</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/cosmetics.png" alt="card4">
+                            <span class="cardDesc">KOZMETIKA</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/bucket.png" alt="card5">
+                            <span class="cardDesc">PLASTICNE KANTE</span>
+                        </div>
+                    </div>
+                </div>
+                <span onclick="slideLeft()" class="btn"></span>
+            </div>
+            <img src="assets/images/wave.png" class="cornerImg">
+        </div>
+    </div>
+    <div class="brandContainer">
+        <div class="brandTitle" data-aos="fade-up">
+            <span>Istaknuti brendovi za koje radimo distribuciju</span>
+        </div>
+        <div class="brands">
+            <div class="brandCard" data-aos="fade-up">
+                <img src="assets/images/dove.png" width="115" height="115" alt="dove">
+                <span>Dove</span>
+            </div>
+            <div class="brandCard" data-aos="fade-up">
+                <img src="assets/images/nivea.png" width="115" height="115" alt="nivea">
+                <span>Nivea</span>
+            </div>
+            <div class="brandCard" data-aos="fade-up">
+                <img src="assets/images/palmolive.png" width="115" height="115" alt="palmolive">
+                <span>Palmolive</span>
+            </div>
+            <div class="brandCard" data-aos="fade-up">
+                <img src="assets/images/vanish.png" width="115" height="115" alt="vanish">
+                <span>Vanish</span>
+            </div>
+            <div class="brandCard" data-aos="fade-up">
+                <img src="assets/images/ajax.png" width="115" height="115" alt="ajax">
+                <span>Ajax</span>
+            </div>
+            <div class="brandCard" data-aos="fade-up">
+                <img src="assets/images/cif.png" width="115" height="115" alt="cif">
+                <span>Cif</span>
+            </div>
+        </div>
+        <button class="brandBtn" data-aos="fade-up">Svi brendovi u našem portfoliju</button>
+    </div>
+    <div class="footerContainer">
+        <div class="footerContent" data-aos="fade-up">
+            <img src="assets/images/footerLogo.png" width="85" height="86" alt="logo">
+            <div class="footerCompanyContacts">
+                <span class="footerCompanyName">D.V.G. COMPANY</span>
+                <div class="contacts">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Čantavirski put bb 24000 Subotica, Srbija</span>
+                </div>
+                <div class="contacts">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+38124568555">+381 24 568 555</a>
+                </div>
+                <div class="contacts">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto: office@dvgcompany.com">office@dvgcompany.com</a>
+                </div>
+            </div>
+            <div class="footerNavigation">
+                <span>O NAMA</span>
+                <span>DVG PROIZVODI</span>
+                <span>BRENDOVI</span>
+                <span>DISTRIBUCIJA</span>
+                <span>SARADNJA</span>
+                <span>NOVOSTI</span>
+                <span>KONTAKT</span>
+            </div>
+            <div class="footerSocialLinks">
+                <span>Pratite nas:</span>
+                <div class="socialLogos">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.messenger.com"><i class="fa-brands fa-facebook-messenger"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightContent">
+            <span>Copyright &copy; 2021 DVG Company, Subotica d.o.o. Sva prava zadržana.</span>
+            <a href="#"><span>Privatnost podatka</span></a>
+            <a href="#"><span>Uslovi korišćenja</span></a>
+            <span>Powered by: <a href="https://www.studiopresent.hu/">StudioPresent</a></span>
+        </div>
+        <i class="fa-solid fa-arrow-up" style="font-size: 30px; color: #fff" onclick="topFunction()" id="myBtn" title="Nazad na vrh stranice"></i>
+    </div>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Hey!</h2>
+        <p>
+            Dobrodošli na DVG Company sajt!
+        </p>
+        <a href="#" id="continue">Nastavi</a>
+    </div>
+</body>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/cardSlider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/scrollBtn.js"></script>
+</html>
+
+
+
+<!--<div class="productsContainer">
+    <div class="productsTitle" data-aos="fade-up">
+        <h1>Naši proizvodi</h1>
+    </div>
+    <div class="productsDescription" data-aos="fade-up">
+        <span>Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica i tela.
+            Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i naši kupci.</span>
+    </div>
+        <div class="products">
+            <div class="prevArrow"  data-aos="fade-left">
+                <i class="fa-solid fa-arrow-left" onclick="slideLeft()"></i>
+            </div>
+            <div class="productsCard">
+                <img src="assets/images/foil.png" width="232" height="250" alt="foil">
+                <span>KESE I FOLIJE</span>
+            </div>
+            <div class="productsCard">
+                <img src="assets/images/forKitchen.png" width="232" height="250" alt="foil">
+                <span>ZA KUHINJU</span>
+            </div>
+            <div class="productsCard">
+                <img src="assets/images/wcPaper.png" width="232" height="250" alt="foil">
+                <span>UBRUSI I TOALET PAPIR</span>
+            </div>
+            <div class="productsCard">
+                <img src="assets/images/cosmetics.png" width="232" height="250" alt="foil">
+                <span>KOZMETIKA</span>
+            </div>
+            <div class="productsCard">
+                <img src="assets/images/bucket.png" width="232" height="250" alt="foil">
+                <span>PLASTIČNE KANTE</span>
+            </div>
+            <div class="nextArrow"   data-aos="fade-right">
+                <i class="fa-solid fa-arrow-right" onclick="slideRight()"></i>
+            </div>
+            <img src="assets/images/wave.png" class="cornerImg">
+        </div>
+</div>-->
+
+
+
+
+
+
+

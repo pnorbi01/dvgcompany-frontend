@@ -7,6 +7,13 @@
     align-items: center;
 }
 
+@mixin displayCenterRowSpacearound {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @mixin displayCenterColumn {
     display: flex;
     flex-direction: column;
@@ -104,11 +111,11 @@ body {
 }
 
 .header {
-    @include displayCenterRow;
+    @include displayCenterRowSpacearound;
     padding-top: 5px;
-    gap: 15rem;
     z-index: 1;
     background-color: #D9D9D9;
+    width: 100%;
 }
 
 .darkmodeBtn {
@@ -117,7 +124,7 @@ body {
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50px;
     color: #fff;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -127,7 +134,28 @@ body {
     background-color: #FFF;
     color: $mainColor;
     border: 1px solid $mainColor;
-    border-radius: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.darkmodeBtnDropdown {
+    background-color: $mainColor;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.darkmodeBtnDropdown:hover {
+    background-color: #FFF;
+    color: $mainColor;
+    border: 1px solid $mainColor;
+    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
@@ -267,6 +295,7 @@ body {
 
 .distributionContainer {
     padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .distributionImage {
@@ -329,12 +358,13 @@ body {
 .statisticContainer {
     @include displayColumnYFlexStart;
     height: 200px;
+    padding-top: 148px;
 }
 
 .statisticDescription {
     @include displayColumnYFlexStart;
     position: $relativePos;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .statisticDescription::before {
@@ -351,7 +381,8 @@ body {
     background-image: url("../assets/images/statistic.png");
     background-size: cover;
     background-position: $centerPos;
-    padding: 50px 0px;
+    margin-top: 50px;
+    padding: 70px 0px;
     gap: 5rem;
 }
 
@@ -405,6 +436,8 @@ body {
 .productsTitle {
     @include displayColumnYFlexStart;
     position: $relativePos;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .productsTitle::before {
@@ -417,12 +450,16 @@ body {
 }
 
 .productsDescription {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
     line-height: 160%;
     text-align: $centerPos;
     width: 524px;
     height: 67px;
+}
+
+.productsDescription span {
+    font-size: 14px;
 }
 
 .products {
@@ -545,6 +582,10 @@ body {
     text-align: $centerPos;
 }
 
+.brandCard img {
+    object-fit: contain;
+}
+
 .brandBtn {
     margin-top: 30px;
     background-color: $mainColor;
@@ -573,6 +614,7 @@ body {
     background-position: $centerPos;
     position: $relativePos;
     padding-bottom: 100px;
+    margin-top: 75px;
 }
 
 .footerContent  {
@@ -600,6 +642,11 @@ body {
     color: #fff;
 }
 
+.contacts a:hover {
+    color: #BF0F0F;
+    cursor: pointer;
+}
+
 .footerCompanyName {
     font-size: 28px;
     font-weight: bold;
@@ -613,6 +660,11 @@ body {
     font-size: 12px;
     border-left: 1px solid rgba(255, 255, 255, 0.26);
     padding: 0px 0px 10px 25px;
+}
+
+.footerNavigation span:hover {
+    color: #BF0F0F;
+    cursor: pointer;
 }
 
 .footerSocialLinks {
@@ -661,6 +713,11 @@ body {
 
 .copyrightContent a {
     color: rgba(255, 255, 255, 0.5);
+}
+
+.copyrightContent a:hover {
+    color: #BF0F0F;
+    cursor: pointer;
 }
 
 .backToTheTop i {
@@ -926,3 +983,6 @@ body {
     bottom: 0;
     left: 0;
 }
+
+
+

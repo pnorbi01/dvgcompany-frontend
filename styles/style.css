@@ -37,12 +37,12 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-top: 5px;
-  gap: 15rem;
   z-index: 1;
-  background-color: #D9D9D9; }
+  background-color: #D9D9D9;
+  width: 100%; }
 
 .darkmodeBtn {
   background-color: #BF0F0F;
@@ -50,7 +50,7 @@ body {
   padding: 15px;
   font-size: 15px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 50px;
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease-out; }
@@ -59,7 +59,26 @@ body {
   background-color: #FFF;
   color: #BF0F0F;
   border: 1px solid #BF0F0F;
-  border-radius: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in; }
+
+.darkmodeBtnDropdown {
+  background-color: #BF0F0F;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-out; }
+
+.darkmodeBtnDropdown:hover {
+  background-color: #FFF;
+  color: #BF0F0F;
+  border: 1px solid #BF0F0F;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease-in; }
 
@@ -190,7 +209,8 @@ body {
   transition: all 0.3s ease-in; }
 
 .distributionContainer {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 70px; }
 
 .distributionImage {
   display: flex;
@@ -260,7 +280,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 200px; }
+  height: 200px;
+  padding-top: 148px; }
 
 .statisticDescription {
   display: flex;
@@ -268,7 +289,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  padding-bottom: 20px; }
+  padding-bottom: 40px; }
 
 .statisticDescription::before {
   content: '';
@@ -287,7 +308,8 @@ body {
   background-image: url("../assets/images/statistic.png");
   background-size: cover;
   background-position: center;
-  padding: 50px 0px;
+  margin-top: 50px;
+  padding: 70px 0px;
   gap: 5rem; }
 
 .statisticElementContent {
@@ -347,7 +369,9 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  position: relative; }
+  position: relative;
+  font-size: 20px;
+  padding-bottom: 20px; }
 
 .productsTitle::before {
   content: '';
@@ -359,12 +383,15 @@ body {
   left: 50; }
 
 .productsDescription {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
   line-height: 160%;
   text-align: center;
   width: 524px;
   height: 67px; }
+
+.productsDescription span {
+  font-size: 14px; }
 
 .products {
   display: flex;
@@ -493,6 +520,9 @@ body {
   margin-top: 30px;
   text-align: center; }
 
+.brandCard img {
+  object-fit: contain; }
+
 .brandBtn {
   margin-top: 30px;
   background-color: #BF0F0F;
@@ -518,7 +548,8 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  margin-top: 75px; }
 
 .footerContent {
   display: flex;
@@ -550,6 +581,10 @@ body {
 .contacts a {
   color: #fff; }
 
+.contacts a:hover {
+  color: #BF0F0F;
+  cursor: pointer; }
+
 .footerCompanyName {
   font-size: 28px;
   font-weight: bold; }
@@ -565,6 +600,10 @@ body {
   font-size: 12px;
   border-left: 1px solid rgba(255, 255, 255, 0.26);
   padding: 0px 0px 10px 25px; }
+
+.footerNavigation span:hover {
+  color: #BF0F0F;
+  cursor: pointer; }
 
 .footerSocialLinks {
   display: flex;
@@ -614,6 +653,10 @@ body {
 
 .copyrightContent a {
   color: rgba(255, 255, 255, 0.5); }
+
+.copyrightContent a:hover {
+  color: #BF0F0F;
+  cursor: pointer; }
 
 .backToTheTop i {
   border: 1px solid #fff;

@@ -7,6 +7,13 @@
     align-items: center;
 }
 
+@mixin displayCenterRowSpacebetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin displayCenterColumn {
     display: flex;
     flex-direction: column;
@@ -67,20 +74,30 @@ $centerPos: center;
         display: none;
     }
 
+    .darkmodeBtn {
+        display: none;
+    }
+
+    .header img {
+        width: 130px; 
+        height: 30px;
+    }
+
+    .header ul {
+        display: none;
+    }
+
     .dropdown {
         position: $relativePos;
         display: inline-block;
       }
 
     .headerContainer {
-        @include displayCenterColumn;
-        height: 150px;
+        @include displayCenterRow;
     }
 
     .header {
-        @include displayCenterColumn;
-        gap: 0;
-        height: 140px;
+        @include displayCenterRow;
     }
 
     .cooperationContainer {
@@ -107,10 +124,6 @@ $centerPos: center;
 
     .brandBtn {
         margin-bottom: 10px;
-    }
-
-    .header li:last-child {
-        display: none;
     }
 
     .brandTitle {
@@ -248,13 +261,6 @@ $centerPos: center;
         gap: 0.5rem;
         text-align: $centerPos;
     }
-
-    .headerContainer ul, li {
-        @include displayCenterRow;
-        text-align: $centerPos;
-        gap: 0.5rem;
-        padding: 0;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -339,14 +345,18 @@ $centerPos: center;
         gap: 0.5rem;
         text-align: $centerPos;
     }
+}
 
-    .headerContainer ul, li {
-        @include displayCenterRow;
-        text-align: $centerPos;
-        gap: 0.5rem;
-        padding: 0;
+@media only screen and (max-width: 600px) {
+    .mySlides img {
+        object-fit: cover;
+    }
+
+    .aboutImg img {
+        object-fit: cover;
     }
 }
+
 
 @media only screen and (max-width: 460px) {
     .copyrightContent {
@@ -422,7 +432,7 @@ $centerPos: center;
 
     .dropdown-content {
         position: $absolutePos;
-        right: 0;
+        left: 0;
         background-color: rgba(0,0,0,1);
         opacity: 0.9;
         min-width: 160px;

@@ -3,22 +3,26 @@
 @media only screen and (max-width: 1400px) {
   .navigationContainer {
     display: none; }
+  .darkmodeBtn {
+    display: none; }
+  .header img {
+    width: 130px;
+    height: 30px; }
+  .header ul {
+    display: none; }
   .dropdown {
     position: relative;
     display: inline-block; }
   .headerContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height: 150px; }
+    align-items: center; }
   .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 0;
-    height: 140px; }
+    align-items: center; }
   .cooperationContainer {
     display: flex;
     flex-direction: row;
@@ -44,8 +48,6 @@
     align-items: center; }
   .brandBtn {
     margin-bottom: 10px; }
-  .header li:last-child {
-    display: none; }
   .brandTitle {
     width: 100% !important; } }
 
@@ -164,15 +166,7 @@
 @media only screen and (max-width: 820px) {
   .copyrightContent {
     gap: 0.5rem;
-    text-align: center; }
-  .headerContainer ul, li {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-    padding: 0; } }
+    text-align: center; } }
 
 @media only screen and (max-width: 800px) {
   .brands {
@@ -245,15 +239,13 @@
     padding-bottom: 30px; }
   .copyrightContent {
     gap: 0.5rem;
-    text-align: center; }
-  .headerContainer ul, li {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-    padding: 0; } }
+    text-align: center; } }
+
+@media only screen and (max-width: 600px) {
+  .mySlides img {
+    object-fit: cover; }
+  .aboutImg img {
+    object-fit: cover; } }
 
 @media only screen and (max-width: 460px) {
   .copyrightContent {
@@ -313,7 +305,7 @@
     width: 70%; }
   .dropdown-content {
     position: absolute;
-    right: 0;
+    left: 0;
     background-color: black;
     opacity: 0.9;
     min-width: 160px;
